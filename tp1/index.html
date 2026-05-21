@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire de contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="formulaire-container">
+
+        <h1>Formulaire de contact</h1>
+
+        <form action="#" method="post">
+
+            <label for="pseudo">Votre Pseudo *</label>
+            <input type="text" id="pseudo" name="pseudo" placeholder="Votre pseudo" required>
+
+            <label for="password">Votre Mot de passe *</label>
+            <input type="password" id="password" name="password" placeholder="Votre mot de passe" required>
+
+            <label for="email">Votre e-mail *</label>
+            <input type="email" id="email" name="email" placeholder="Votre adresse e-mail" required>
+
+            <label for="objet">Objet du message *</label>
+            <select id="objet" name="objet" required>
+                <option value="">Choisissez une option</option>
+                <option value="question">J'ai une question</option>
+                <option value="suggestion">Je fais une suggestion</option>
+                <option value="probleme">Je rencontre un problème</option>
+                <option value="autre">Autre</option>
+            </select>
+
+            <label for="message">Votre message *</label>
+            <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+
+            <fieldset class="urgence-fieldset">
+                <legend class="urgence-legend">Niveau d'urgence *</legend>
+
+                <div class="radio-groupe">
+                    <input type="radio" id="urgent" name="urgence" value="urgent" required>
+                    <label for="urgent">Urgent</label>
+
+                    <input type="radio" id="normal" name="urgence" value="normal">
+                    <label for="normal">Normal</label>
+
+                    <input type="radio" id="lent" name="urgence" value="lent" checked>
+                    <label for="lent">lent</label>
+                </div>
+            </fieldset>
+
+            <div class="checkbox-ligne">
+                <input type="checkbox" id="confidentialite" name="confidentialite" required>
+                <label for="confidentialite">
+                    J'ai lu et j'accepte la <a href="#">politique de confidentialité</a> du site.
+                </label>
+            </div>
+
+            <button type="submit">Envoyer</button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
