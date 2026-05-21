@@ -1,50 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulaire de contact </title>
+    <title>Formulaire de contact</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Formulaire de contact</h1>
 
-    <form action="#" method="post">
+    <div class="formulaire-container">
 
-        <label for="pseudo">Votre Pseudo *</label>
-        <input type="text" id="pseudo" name="pseudo" placeholder="Votre pseudo">
+        <h1>Formulaire de contact</h1>
 
-        <label for="password">Votre Mot de passe *</label>
-        <input type="password" id="password" name="password" placeholder="Votre mot de passe">
+        <form action="#" method="post">
 
-        <label for="email">Votre e-mail *</label>
-        <input type="email" id="email" name="email" placeholder="Votre adresse e-mail">
+            <label for="pseudo">Votre Pseudo *</label>
+            <input type="text" id="pseudo" name="pseudo" placeholder="Votre pseudo" required>
 
-        <label for="objet">Objet du message *</label>
-        <select type="objet" id="objet" name="objet">
-            <option value="question">J'ai une question</option>
-            <option value="suggestion">J'ai une suggestion</option>
-            <option value="problème">J'ai un problème</option>
-            <option value="autre">autre</option>
-        </select>
+            <label for="password">Votre Mot de passe *</label>
+            <input type="password" id="password" name="password" placeholder="Votre mot de passe" required>
 
-        <label for="message">Votre message *</label>
-        <textarea id="message" name="message" placeholder="Votre message" rows="5"></textarea>
+            <label for="email">Votre e-mail *</label>
+            <input type="email" id="email" name="email" placeholder="Votre adresse e-mail" required>
 
-        <label>Niveau d'urgence *</label>
-        <input type="radio" id="urgent" name="urgence" requierd>Urgent
-        <input type="radio" id="normal" name="urgence"requierd>Normal
-        <input type="radio" id="lent" name="urgence" checked requierd>Lent
+            <label for="objet">Objet du message *</label>
+            <select id="objet" name="objet" required>
+                <option value="question">J'ai une question</option>
+                <option value="suggestion">Je fais une suggestion</option>
+                <option value="probleme">Je rencontre un problème</option>
+                <option value="autre">Autre</option>
+            </select>
 
-        <input type="checkbox" id="confidentialite" name="confidentialite" required>
-        <label for="confidentialite">j'ai lu et j'accepte la <a href="#">pomitique de confidentialité</a> du site</label>
+            <label for="message">Votre message *</label>
+            <textarea id="message" name="message" placeholder="Votre message" required></textarea>
 
-        <button type="submit">Envoyer</button>
+            <label>Niveau d'urgence *</label>
+            <div class="radio-groupe">
+                <input type="radio" id="urgent" name="urgence" value="urgent" required>
+                <label for="urgent">Urgent</label>
 
+                <input type="radio" id="normal" name="urgence" value="normal">
+                <label for="normal">Normal</label>
 
+                <input type="radio" id="lent" name="urgence" value="lent" checked>
+                <label for="lent">lent</label>
+            </div>
 
+            <div class="checkbox-ligne">
+                <input type="checkbox" id="confidentialite" name="confidentialite" required>
+                <label for="confidentialite">
+                    J'ai lu et j'accepte la <a href="#">politique de confidentialité</a> du site.
+                </label>
+            </div>
+
+            <button type="submit">Envoyer</button>
+
+        </form>
+
+    </div>
 
 </body>
 
