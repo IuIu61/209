@@ -1,0 +1,37 @@
+h1 {
+    color: green;
+    text-align: center;
+}
+
+#game {
+    background-color: rgba(58, 173, 58, 0.632);
+    color: rgb(19, 209, 19);
+}
+
+#result {
+    background-color: rgba(58, 66, 173, 0.632);
+    color: white;
+}
+
+section {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.button {
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 3px solid blue;
+    color: blue;
+}
+
+.button:hover {
+    border: 3px solid rgb(255, 0, 191);
+    color: white;
+    border: 3px ;
+}
