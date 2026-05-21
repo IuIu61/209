@@ -92,3 +92,16 @@ button {
 button:hover {
     background-color: #153d82;
 }
+
+.urgence-fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.urgence-legend {
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 12px;
+    margin-bottom: 3px;
+}
